@@ -1,0 +1,72 @@
+/*------------------------SITE_CSS------------------------*/
+/*---MOBILE_FIRST---*/
+*{border: 0px solid !important;}
+
+*{box-sizing: border-box;}
+body{font-family: monospace;}
+
+nav{margin-top: 0px;transition: all 0.5s ease;}
+nav input,a{float: left;width: 50%;height: 30px;padding: 0 3%;margin: 0px 0px;transition: all 0.5s ease;}
+nav a{text-decoration: none;text-align: center;padding: 7px 0;color: black;background: white;border-left: 1px solid !important;}
+nav input:focus{background: lightgrey;outline: none;}
+nav a:hover{background: red;cursor: pointer;color: white;}
+.header-div-1{background: black;color: white;font-style: italic;padding: 50px 10%;}
+.header-div-2{width: 150px;height: 130px;margin: -50px 10%;}
+.header-div-2-img{height: 100%;width: 100%;box-shadow: 0px 3px 5px -3px silver;}
+.header-div-2-form-input-1{display: none;}
+.header-div-2-form-input-2{width: 100%;text-align: center;box-shadow: 0 0 5px silver;display: none;background: aliceblue;}
+.header-div-2-form-input-2:hover{background: lightgrey;cursor: pointer;}
+.header-p{margin: -100px 0 0 70%;color: white;font-size: 70%;}
+.error{position: absolute;left: 20%;top: 70px;background: red;color: white;padding: 10px 2%;}
+
+.main-div{width: 95%;min-height: 500px;margin: 50px auto;margin-bottom: 0px;transition: all 0.5s ease;border-radius: 2px;}
+.main-div-button-1,.main-div-button-2{width: 100px;height: 40px;margin-left: 60%;background: lightblue;box-shadow: 0px 3px 5px -3px silver;}
+.main-div-button-2{display:none;}
+.main-div-button-1:hover{background: black;color: white;cursor: pointer;}
+.main-div-button-2:hover{background: black;color: white;cursor: pointer;}
+.main-div-div-div{width: 100%;box-shadow: 0px 3px 5px -3px silver;padding-bottom: 10px;margin: 10px 0;transition: all 0.5s ease;}
+.main-div-div-div p{width: 95%;padding: 10px 0%;margin: 0 auto;font-weight: bold;font-size: 130%;}
+.main-div-div-div-input{width: 99%;height: 50px;border-radius: 3px;padding: 0px 2.5%;margin: 0px auto;display: block;}
+.main-div-div-div-input-6{height: 150px;}
+.main-div-div-div-textarea{min-height: 100px;border-radius: 3px;padding: 10px 2.5%;transition: all 0.5s ease;}
+.main-div-div-div-input:focus{background: lightgrey;outline: none;}
+.main-div-div-div-textarea:focus{height: 150px;outline: none;}
+.main-div-div-div-input-8{margin-bottom: 50px;}
+
+footer{height: 100px;background: black;}
+footer a{width: auto;text-decoration: none;color: white;margin: 10px 35%;padding: 6px 10%;}
+footer a:hover{background: white;color: black;}
+
+.else-div{width: 80%;margin: 30px auto;}
+.else-div p{text-align: center;padding: 10px 0px;}
+.else-div h1{text-align: center;padding: 20px 0px;}
+.else-div div{margin: 20px 0px;overflow: auto;}
+.else-div div h2{text-align: center;padding: 10px 0;width: 20%;margin: auto;}
+.else-div-div-a-1,.else-div-div-a-2{height: 100px;width: 95%;padding: 40px 5%;margin: 10px 2%;text-align: center;text-decoration: none;font-weight: bold;transition: all 0.2s ease;background: #f4f6f9;}
+.else-div-div-a-1:hover{letter-spacing: 5px;background: blue;color: white;box-shadow: 2px 2px 6px black;transition: all 0.2s ease;}
+.else-div-div-a-2:hover{letter-spacing: 5px;background: red;color: white;box-shadow: 2px 2px 6px black;transition: all 0.2s ease;}
+
+/*---FOR_TABLETS---*/
+@media only screen and (min-width:560px){
+    
+    .main-div-button-1,.main-div-button-2{margin-left: 75%;}
+    .main-div{width: 80%;}
+}
+
+/*---FOR_LAPTOPS---*/
+@media only screen and (min-width:720px){
+    nav{width: 40%;margin-left: 60%;}
+    .header-div-1{min-height: 150px;}
+    nav input:focus{width: 100%;margin-left: -300px;background: lightgrey;}
+    .error{left: 15%;top: 100px;}
+    .header-p{margin: -100px 0 0 85%;}
+    
+    footer a{margin: 10px 40%;}
+    
+    .else-div{width: 50%;}
+}
+
+/*---FOR_BIG_SCREENS---*/
+@media only screen and (min-width:960px){
+    
+}
