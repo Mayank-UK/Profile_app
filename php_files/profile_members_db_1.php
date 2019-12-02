@@ -17,7 +17,7 @@ if($data=file_get_contents('php://input'))
 }
 else
 {
-    header('Location: ../protected_page?error=database connection error');
+    header('Location: ../index?error=database connection error');
     die();
 }
 
@@ -37,6 +37,6 @@ if($stmt=$db->prepare("UPDATE  profile_members SET name=?,email=?,education=?,co
 }
 else
 {
-    header('Location: ../protected_page?error=database connection error');
+    header('Location: ../index?error=database connection error');
 }
 ?>

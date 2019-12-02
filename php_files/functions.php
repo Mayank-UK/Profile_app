@@ -218,11 +218,13 @@ function session_initialize($email,$db)
 {
     // httponly provides protection against javascript
     // Forces sessions to only use cookies.
+    /*
     if (ini_set('session.use_only_cookies', 1) === FALSE)           
     {
         header("Location: error.php?error=Could not initiate a safe session");
         exit();
     }
+    */
     
     if ($stmt = $db->prepare("SELECT id, username, password FROM members WHERE email = ? LIMIT 1"))
     {

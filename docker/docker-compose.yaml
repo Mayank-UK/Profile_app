@@ -1,0 +1,40 @@
+version: '3.7'
+
+services:
+  apache:
+    build: './apache'
+    container_name: 'apache'
+    restart: always
+    ports: 
+      - 80:80
+    networks:
+      - frontend
+      - backend
+    volumes:
+      - ./../:/usr/local/apache2/htdocs
+    depends_on:
+      - php
+      - mysql
+  php:
+    build: './php'
+    container_name: 'php'
+    restart: always
+    networks:
+      - backend
+    volumes:
+      - ./../:/usr/local/apache2/htdocs
+  mysql:
+    build: './mysql'
+    container_name: 'mysql'
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+    networks:
+      - backend
+    volumes:
+      - ./database:/var/lib/mysql
+
+networks:
+  backend:
+  frontend:

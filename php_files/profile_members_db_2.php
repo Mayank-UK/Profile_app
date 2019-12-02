@@ -17,11 +17,11 @@ if($data=file_get_contents('php://input'))
     }
     else
     {
-        header('Location: ../protected_page?error=database connection error');
+        header('Location: ../index?error=database connection error');
         exit();
     }
 }
 else
 {
-    header('Location: ../protected_page?error=an error has occured');
+    header('Location: ../index?error=an error has occured');
 }

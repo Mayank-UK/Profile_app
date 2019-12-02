@@ -49,7 +49,7 @@ if (!empty($_POST['email']) && !empty($_POST['p']))
                 setcookie('uemail',$uemail,$year);
             }
         }
-        header('Location: ../protected_page.php');
+        header('Location: ../index.php');
     }
     else
     {

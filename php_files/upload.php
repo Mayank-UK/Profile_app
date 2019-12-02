@@ -11,7 +11,7 @@ $imageFileType=strtolower($temp[1]);
 // Check if image file is a actual image or fake image
 if(!@is_array(getimagesize($_FILES["fileToUpload"]["tmp_name"])))
 {
-    header("Location: ../protected_page.php?error=file is not an image");
+    header("Location: ../index.php?error=file is not an image");
     exit();
 }
 
@@ -24,14 +24,14 @@ if(!@is_array(getimagesize($_FILES["fileToUpload"]["tmp_name"])))
 // Allow certain file formats
 if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif" )
 {
-    header("Location: ../protected_page.php?error=Sorry, only JPG, JPEG, PNG & GIF files are allowed");
+    header("Location: ../index.php?error=Sorry, only JPG, JPEG, PNG & GIF files are allowed");
     exit();
 }
 
 // Check file size
 if ($_FILES["fileToUpload"]["size"] > 1024*200)
 {
-    header("Location: ../protected_page.php?error=file size should be less than 200kb");
+    header("Location: ../index.php?error=file size should be less than 200kb");
     exit();
 }
 
@@ -55,7 +55,7 @@ if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"],$new_path))
     }
     else
     {
-        header("Location: ../protected_page.php?error=Database error");
+        header("Location: ../index.php?error=Database error");
         exit();
     }
         
@@ -68,14 +68,14 @@ if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"],$new_path))
     }
     else
     {
-        header("Location: ../protected_page.php?error=Database error");
+        header("Location: ../index.php?error=Database error");
         die();
     }
     
-    header("Location: ../protected_page.php");
+    header("Location: ../index.php");
 }
 else
 {
-    header("Location: ../protected_page.php?error=Sorry, there was an error uploading your file");
+    header("Location: ../index.php?error=Sorry, there was an error uploading your file");
 }
 ?>

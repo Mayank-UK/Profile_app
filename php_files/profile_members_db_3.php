@@ -26,6 +26,6 @@ if($stmt=$db->prepare("select * from profile_members where oname=? LIMIT 1"))
 }
 else
 {
-    header('Location: ../protected_page?error=database connection error');
+    header('Location: ../index?error=database connection error');
 }
 ?>

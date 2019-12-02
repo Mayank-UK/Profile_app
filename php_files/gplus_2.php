@@ -48,7 +48,7 @@ if(isset($pay_load))
             if($count==1)
             {           
                 session_initialize($email,$db);
-                header("Location: ../protected_page.php");
+                header("Location: ../index.php");
             }
             else
             {
@@ -68,7 +68,7 @@ if(isset($pay_load))
                 }
                 
                 session_initialize($email,$db);
-                header("Location: ../protected_page.php");
+                header("Location: ../index.php");
             }
         }
         

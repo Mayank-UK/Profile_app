@@ -113,7 +113,7 @@ if (!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['p'])
             $stmt->execute();
         }
         session_initialize($email,$db);
-        header('Location: ../protected_page.php');
+        header('Location: ../index.php');
     }
 }
 ?>
