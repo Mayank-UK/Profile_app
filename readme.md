@@ -7,6 +7,7 @@ docker related:
     -configuration made in httpd.conf(Apache):
         -added virtualhost
         -enabled proxy modules
+        -enable mod_rewrite module
     -configuration made in my.cnf(MySQL):
         -none
     -configuration made in php.ini(PHP):
