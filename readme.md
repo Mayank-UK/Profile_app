@@ -1,3 +1,5 @@
+All the docker data(Dockerfile, docker-compose, and appropriate config files) is present in docker directory.
+
 For deploying on usual hosting:
     -edit the host in database configration file and change it to localhost
 
