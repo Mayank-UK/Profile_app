@@ -2,8 +2,9 @@ version: '3.7'
 
 services:
   apache:
-    build: './apache'
-    container_name: 'apache'
+    build: ./apache
+    image: apache_profile_app
+    container_name: apache_profile_app
     restart: always
     ports: 
       - 80:80
@@ -16,16 +17,18 @@ services:
       - php
       - mysql
   php:
-    build: './php'
-    container_name: 'php'
+    build: ./php
+    image: php_profile_app
+    container_name: php_profile_app
     restart: always
     networks:
       - backend
     volumes:
       - ./../:/usr/local/apache2/htdocs
   mysql:
-    build: './mysql'
-    container_name: 'mysql'
+    build: ./mysql
+    image: mysql_profile_app
+    container_name: mysql_profile_app
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
