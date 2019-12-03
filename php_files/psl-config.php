@@ -6,7 +6,7 @@ These are the database login details
 //The host for usual hosting.
 #$HOST="mysql:host=localhost;dbname=user;charset=utf8";            
 //The host for docker containers.
-$HOST="mysql:host=mysql;dbname=user;charset=utf8";                 
+$HOST="mysql:host=mysql_profile_app;dbname=user;charset=utf8";                 
 //The database username. 
 $USER="root";            
 //The database password. 
