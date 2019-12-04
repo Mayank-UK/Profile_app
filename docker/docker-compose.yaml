@@ -33,6 +33,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: user
     networks:
       - backend
     volumes:
