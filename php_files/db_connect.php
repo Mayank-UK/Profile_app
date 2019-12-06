@@ -7,6 +7,5 @@ try
 }
 catch(exception $e)
 {
-    echo $e;
-    //header('Location: error.php?error=Database error');
+    header('Location: error.php?error=Database error');
 }
