@@ -24,7 +24,7 @@ services:
     networks:
       - backend
     volumes:
-      - ./../:/usr/local/apache2/htdocs
+      - ./../:/var/www/html
   mysql:
     build: ./mysql
     image: mysql_profile_app
