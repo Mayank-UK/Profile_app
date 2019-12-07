@@ -5,6 +5,7 @@ general info:
 docker related:
     -all the docker data(Dockerfile, docker-compose, and appropriate config files) is present in docker directory.
     -permissions prefferd '755', other permissions lead to security errors especially in MySQL
+    -laravel storage/ permissions preffered '777', other permissions lead to permission errors
     -configuration made in httpd.conf(Apache):
         -added virtualhost
         -enabled proxy modules

@@ -1,0 +1,7 @@
+#copy it to the root of the project
+#You can't commit empty folders in git, there's a workaround
+# exclude everything
+**/docker/database/*
+
+# exception to the rule
+!**/docker/database/.gitkeep 
