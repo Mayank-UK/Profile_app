@@ -1,3 +1,5 @@
+/vendor
+
 #You can't commit empty folders in git, there's a workaround
 # exclude everything
 **/docker/database/*
