@@ -2,7 +2,7 @@
 
 #You can't commit empty folders in git, there's a workaround
 # exclude everything
-**/docker/database/*
+**/.docker/database/*
 
 # exception to the rule
-!**/docker/database/.gitkeep 
+!**/.docker/database/.gitkeep 
